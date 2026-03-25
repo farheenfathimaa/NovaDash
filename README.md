@@ -38,23 +38,37 @@ NovaMart's leadership team needed a centralized way to monitor performance acros
 
 ---
 
+## Technical Challenges & Solutions
+During the development of this portfolio, several real-world data issues were encountered and resolved:
+- **Uncalculated Excel Formulas**: Fixed by implementing **Power Query Custom Columns** in Power BI and **Calculated Fields** in Tableau to ensure data accuracy.
+- **Geographic Mapping**: Resolved "Unknown" regions in Tableau by assigning **Geographical Roles** and manually mapping fictional regions to real-world states for visualization.
+- **Data Granularity**: Addressed scatter plot "stacking" issues by disaggregating measures and adding unique level-of-detail (Order ID).
+
+---
+
+## Visual Previews
+| Power BI: Executive Summary | Power BI: Sales Breakdown |
+| :--- | :--- |
+| ![Executive Summary](screenshots/1.png) | ![Sales Breakdown](screenshots/2.png) |
+
+| Power BI: Product Analysis | Power BI: Time Intelligence |
+| :--- | :--- |
+| ![Product Analysis](screenshots/3.png) | ![Time Intelligence](screenshots/4.png) |
+
+| Tableau: Final Dashboard |
+| :--- |
+| ![Tableau Dashboard](screenshots/5.png) |
+
+---
+
 ## Project Deliverables
 1. **[NovaMart_Analysis.xlsx](NovaMart_Analysis.xlsx)** - Full Excel Workbook with raw data, cleaning steps, and dashboard.
-2. **[Tableau_Guide.md](Tableau_Guide.md)** - Blueprint for rebuilding the Tableau dashboard.
-3. **[PowerBI_Guide.md](PowerBI_Guide.md)** - Full report specification and DAX library for Power BI.
+2. **[Tableau_Guide.md](Tableau_Guide.md)** - Blueprint for rebuilding the Tableau dashboard (includes technical fixes).
+3. **[PowerBI_Guide.md](PowerBI_Guide.md)** - Full report specification and DAX library for Power BI (includes troubleshooting steps).
 
 ---
 
 ## How to Run
-1. **Excel**: Open `NovaMart_Analysis.xlsx` in Microsoft Excel (2019 or later recommended). Navigate to the "Dashboard" sheet.
-2. **Tableau**: Use `Tableau_Guide.md` as a step-by-step tutorial to connect to the Excel file and build the vizzes.
-3. **Power BI**: Use `PowerBI_Guide.md` to import the data into Power BI Desktop and implement the DAX measures provided.
-
----
-
-## Visual Previews (Screenshots Placeholder)
-*Insert dashboard screenshots here after following the build guides.*
-
-| Excel Dashboard | Tableau Dashboard | Power BI Report |
-| :--- | :--- | :--- |
-| ![Excel](https://via.placeholder.com/300x200?text=Excel+Dashboard) | ![Tableau](https://via.placeholder.com/300x200?text=Tableau+Dashboard) | ![PowerBI](https://via.placeholder.com/300x200?text=Power+BI+Report) |
+1. **Excel**: Open `NovaMart_Analysis.xlsx` in Microsoft Excel.
+2. **Tableau**: Open `NovaMart_Report.twb` (requires Tableau Desktop). Reference the `Tableau_Guide.md` for build logic.
+3. **Power BI**: Open `NovaMart_Report.pbix` (requires Power BI Desktop). Reference the `PowerBI_Guide.md` for DAX logic.

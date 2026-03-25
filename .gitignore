@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tableau temp files
+*.tmp
+*.temp
+~*
+*.log
+*.tps
+*.twbr
+*.twb~
+
+# Power BI temp files
+*.pbix.temp
+*.pbit.temp
+
+# Python
+__pycache__/
+*.py[cod]
+generate_excel.py
+
+# Excel temp
+~$*
